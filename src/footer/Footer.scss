@@ -1,0 +1,31 @@
+.footer {
+  background-color: #fff;
+  padding: 48px 0;
+  box-sizing: border-box;
+
+  &__title {
+    font-size: 20px;
+    letter-spacing: 0.35em;
+    margin-bottom: 34px;
+  }
+
+  &__email {
+    letter-spacing: 0.05em;
+    line-height: 1.2em;
+    font-size: 16px;
+  }
+  &__sns {
+    margin-bottom: 20px;
+    &__item {
+      display: flex;
+      justify-content: flex-end;
+      &__kakao {
+        margin-right: 15px;
+      }
+    }
+  }
+  &__copyright {
+    line-height: 1.2em;
+    font-size: 16px;
+  }
+}
