@@ -1,31 +1,37 @@
 .footer {
   background-color: #fff;
-  padding: 48px 0;
+  padding: 4.8vmin 0;
   box-sizing: border-box;
 
   &__title {
-    font-size: 20px;
+    font-size: 2vmin;
     letter-spacing: 0.35em;
-    margin-bottom: 34px;
+    margin-bottom: 3.4vmin;
   }
 
   &__email {
     letter-spacing: 0.05em;
     line-height: 1.2em;
-    font-size: 16px;
+    font-size: 1.6vmin;
   }
   &__sns {
-    margin-bottom: 20px;
+    margin-bottom: 2vmin;
     &__item {
       display: flex;
       justify-content: flex-end;
       &__kakao {
-        margin-right: 15px;
+        width: 6.4vmin;
+        height: 6.4vmin;
+        margin-right: 1.5vmin;
+      }
+      &__telegram {
+        width: 6.4vmin;
+        height: 6.4vmin;
       }
     }
   }
   &__copyright {
     line-height: 1.2em;
-    font-size: 16px;
+    font-size: 1.6vmin;
   }
 }

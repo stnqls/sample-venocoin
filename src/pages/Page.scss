@@ -1,0 +1,292 @@
+/* page main */
+
+.page_main {
+  max-height: 1014px;
+  height: 100vw;
+  min-height: 50%;
+  background-image: url("../images/main_bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-position: 50% 50%;
+  padding-top: 25%;
+  box-sizing: border-box;
+
+  &__title {
+    color: #fff;
+    /* font-size: 6.4rem; */
+    font-size: 8vmin;
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: normal;
+    margin-bottom: 3%;
+  }
+  &__subtitle {
+    letter-spacing: 0.05em;
+    line-height: 1.8em;
+    text-align: center;
+    /* font-size: 2.4rem; */
+    font-size: 2.5vmin;
+    color: rgb(228, 235, 122);
+  }
+}
+
+/* page 1 */
+
+.page-one {
+  max-height: 1032px;
+  height: 100vw;
+  display: flex;
+  &__textarea {
+    width: 50%;
+    height: auto;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // &__lines {
+    //   &__line {
+    //     width: 55vmin;
+    //     transform: rotate(90deg);
+    //     border: 1px solid rgb(180, 180, 180);
+    //   }
+    //   &__line-box {
+    //     width: 10vmin;
+    //     height: 0.3vmin;
+    //     background-color: #fff;
+    //     transform: rotate(90deg);
+    //   }
+    // }
+    &__contents {
+      padding-left: 7vmin;
+      border-left: 1px solid rgb(180, 180, 180);
+
+      &__menu {
+        font-size: 1.6vmin;
+        margin-bottom: 4vmin;
+      }
+      &__title {
+        line-height: 1.8em;
+        font-size: 2.4vmin;
+        margin-bottom: 5vmin;
+      }
+      &__text {
+        width: 34vmin;
+        line-height: 1.8em;
+        font-size: 1.6vmin;
+        letter-spacing: 0.04em;
+        margin-bottom: 6vmin;
+      }
+      &__buttons {
+        display: flex;
+        &__text {
+          width: 20.6vmin;
+          height: 3.8vmin;
+          background-color: #fff;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px 0 0 5px;
+          font-size: 1.6vmin;
+          letter-spacing: 0.2rem;
+          margin-right: 3px;
+        }
+        &__arrow {
+          cursor: pointer;
+          width: 3.9vmin;
+          height: 3.8vmin;
+          background-color: #fff;
+          border: none;
+          border-radius: 0 5px 5px 0;
+          &__img {
+            width: 60%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+  &__imgarea {
+    width: 50%;
+    max-height: 1032px;
+    height: 100vw;
+    background-image: url("../images/bg_1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+// page 2
+
+.page-two {
+  &__header {
+    padding-left: 15vmin;
+    padding-top: 15vmin;
+    &__menu {
+      font-size: 1.6vmin;
+      margin-bottom: 4vmin;
+    }
+    &__title {
+      line-height: 1.8em;
+      font-size: 2.4vmin;
+      margin-bottom: 5vmin;
+    }
+  }
+  &__body {
+    &__lists {
+      &__item {
+        display: flex;
+        &__textarea {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          &__title {
+            width: 36vmin;
+            letter-spacing: 0.08em;
+            font-size: 3.8vmin;
+            line-height: 1.5em;
+            margin: 0 auto 4vmin;
+          }
+          &__text {
+            margin: 0 auto;
+            width: 36vmin;
+            letter-spacing: 0.05em;
+            line-height: 1.8em;
+            font-size: 1.6vmin;
+            font-weight: normal;
+          }
+        }
+        &__imgarea {
+          width: 50%;
+          &__img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 3번째 페이지
+
+.page-three {
+  background-image: url("../images/page3_bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 88vmin;
+  position: relative;
+  &__contain {
+    position: absolute;
+    top: 9vmin;
+    right: 15vmin;
+    width: 49vmin;
+    height: 64.5vmin;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__menu {
+      width: 36vmin;
+      font-size: 1.4vmin;
+      letter-spacing: 0.16em;
+      margin: 0 auto 4vmin;
+    }
+    &__title {
+      width: 36vmin;
+      letter-spacing: 0.08em;
+      font-size: 2.4vmin;
+      line-height: 1.8em;
+      margin: 0 auto 4vmin;
+    }
+    &__text {
+      margin: 0 auto;
+      width: 36vmin;
+      letter-spacing: 0.05em;
+      line-height: 1.8em;
+      font-size: 1.6vmin;
+      font-weight: normal;
+    }
+  }
+}
+
+// 4번째 페이지
+
+.page-four {
+  height: 82vmin;
+  display: flex;
+  &__imgarea {
+    width: 50%;
+    height: 100%;
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__textarea {
+    width: 50%;
+    padding: 12.2vmin 8.5vmin 6.2vmin;
+    &__menu {
+      font-size: 2.4vmin;
+      line-height: 1.8em;
+    }
+    &__count {
+      font-size: 1.4vmin;
+      text-align: right;
+      margin-bottom: 6vmin;
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      &__item {
+        width: 14vmin;
+        height: 11vmin;
+        margin-right: 4vmin;
+        margin-bottom: 6.2vmin;
+        &__number {
+          letter-spacing: 0.08em;
+          font-size: 4vmin;
+          margin-bottom: 1.5vmin;
+        }
+        &__hr {
+          margin-bottom: 1.5vmin;
+        }
+        &__title {
+          letter-spacing: 0.16em;
+          font-size: 1.4vmin;
+        }
+      }
+    }
+  }
+}
+
+// 다섯번째 페이지
+.page-five {
+  background-color: #000;
+  color: #fff;
+  height: 73.6vmin;
+  &__contain {
+    padding-left: 40vmin;
+    padding-top: 13vmin;
+    box-sizing: border-box;
+    &__menu {
+      font-size: 1.4vmin;
+      letter-spacing: 0.16em;
+      margin-bottom: 3vmin;
+    }
+    &__title {
+      font-size: 2.4vmin;
+      line-height: 1.8em;
+      margin-bottom: 4vmin;
+    }
+    &__text {
+      width: 37vmin;
+      height: 20.2vmin;
+      line-height: 1.8em;
+      font-size: 1.6vmin;
+    }
+  }
+}
