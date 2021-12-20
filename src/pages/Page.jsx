@@ -26,10 +26,6 @@ function Page() {
 
       <section className="page-one">
         <div className="page-one__textarea">
-          {/* <span className="page-one_textarea__lines">
-            <hr className="page-one__textarea__lines__line" />
-            <hr className="page-one__textarea__lines__line-box" />
-          </span> */}
           <div className="page-one__textarea__contents">
             <div className="page-one__textarea__contents__menu">VISION</div>
             <div className="page-one__textarea__contents__title">
