@@ -1,3 +1,42 @@
+// animation
+@mixin animation($delay, $duration, $animation, $count, $function, $mode) {
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-iteration-count: $count;
+  animation-timing-function: $function;
+  animation-fill-mode: $mode;
+}
+
+@mixin keyfram($animation_name) {
+  @keyframes #{$animation_name} {
+    @content;
+  }
+}
+@include keyfram(LEFT) {
+  100% {
+    transform: translateX(0);
+  }
+  0% {
+    transform: translateX(-500px);
+  }
+}
+@include keyfram(SHOW) {
+  100% {
+    transform: perspective(500px) translateZ(0);
+  }
+  0% {
+    transform: perspective(500px) translateZ(-700px);
+  }
+}
+@include keyfram(TRANSPARENT) {
+  100% {
+    opacity: 100%;
+  }
+  0% {
+    opacity: 0;
+  }
+}
 /* page main */
 
 .page_main {
@@ -19,14 +58,16 @@
     line-height: 1.5em;
     font-weight: normal;
     margin-bottom: 3%;
+    @include animation(0.3s, 1s, LEFT, 1, linear, none);
   }
   &__subtitle {
     letter-spacing: 0.05em;
     line-height: 1.8em;
     text-align: center;
-    /* font-size: 2.4rem; */
+    // font-size: 2.4rem;
     font-size: 2.5vmin;
     color: rgb(228, 235, 122);
+    @include animation(0.3s, 2s, TRANSPARENT, 1, linear, none);
   }
 }
 
@@ -57,6 +98,7 @@
         line-height: 1.8em;
         font-size: 2.4vmin;
         margin-bottom: 5vmin;
+        @include animation(0.3s, 2s, TRANSPARENT, 1, linear, none);
       }
       &__text {
         width: 34vmin;
@@ -64,6 +106,7 @@
         font-size: 1.6vmin;
         letter-spacing: 0.04em;
         margin-bottom: 6vmin;
+        @include animation(0.3s, 2s, TRANSPARENT, 1, linear, none);
       }
       &__buttons {
         display: flex;
@@ -77,6 +120,7 @@
           font-size: 1.6vmin;
           letter-spacing: 0.2rem;
           margin-right: 3px;
+          @include animation(0.3s, 1s, LEFT, 1, linear, none);
         }
         &__arrow {
           cursor: pointer;
